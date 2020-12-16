@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio_6</title>
+        <meta name="description" content="Menu HTML5">
+        <meta name="author" content="Luis Fernández Suárez">
+        <link rel="stylesheet" href="Ejercicio6.css"/>
+    </head>
+    <body>
+        <h1>Menu Ejercicio 6</h1>
+        <form  id="basedatos" action='#' method='post'>
+            <div class="container">
+                <h2>Crear Base de Datos</h2>
+                <input type='submit' class='button' name='CrearBase' value='Crear base'/>
+            </div>
+            <div class="container">
+                <h2>Crear una tabla</h2>
+                <input type='submit' class='button' name='CrearTabla' value='Crear tabla'/>
+            </div>
+            <div class="container">
+                <h2>Insertar datos en la tabla</h2>
+                <p>Nombre del usuario:</p>
+                    <input type='text' class='text' name='nombre_insertar'/>
+                <p>Apellido del usuario:</p>
+                    <input type='text' class='text' name='apellidos_insertar'/>
+                <p>Correo del usuario:</p>
+                    <input type='text' class='text' name='email_insertar'/>
+                <p>Teléfono del usuario:</p>
+                    <input type='text' class='text' name='telefono_insertar'/>
+                <p>Edad del usuario: </p>
+                    <input type='text' class='text' name='edad_insertar'/>
+                <p>Sexo del usuario:</p>
+                <select name="sexo_insertar">
+					<option value="hombre">Hombre</option>
+					<option value="mujer">Mujer</option>
+				</select>
+                <p>Prueba realizada de forma correcta:</p>
+                    <input type='text' class='text' name='correcta_insertar'/>
+                <p>Tiempo empleado en realizar la prueba:</p>
+                    <input type='text' class='text' name='tiempo_insertar'/>
+                    <p>Pericia demostrada:</p>
+                    <select name="pericia_insertar">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                <p>Valoración: </p>
+                    <select name="valoracion_insertar">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                <p>Propuestas de mejora:</p>
+                    <input type='text' class='text' name='propuestas_insertar'/>		
+                    <p>Comentarios:</p>
+                    <input type='text' class='text' name='comentarios_insertar'/>
+                <input type='submit' class='button' name='insertar' value='Insertar'/>
+            </div>
+            <div class="container">
+                <h2>Buscar datos en una tabla</h2>
+                <p>Por favor, introduzca el id del usuario</p>
+                <input type='text' class='text' name='id_usuario_buscar'/>
+                <input type='submit' class='button' name='buscar' value='Buscar'/>
+            </div>
+            <div class="container">
+                <h2>Modificar datos en una tabla</h2>
+                <p>Por favor, introduzca el id del usuario a actualizar</p>
+                    <input type='text' class='text' name='id_usuario_modif'/>
+                <p>Nombre del usuario:</p>
+                    <input type='text' class='text' name='nombre_modif'/>
+                <p>Apellido del usuario:</p>
+                    <input type='text' class='text' name='apellidos_modif'/>
+                <p>Correo del usuario:</p>
+                    <input type='text' class='text' name='email_modif'/>
+                <p>Teléfono del usuario:</p>
+                    <input type='text' class='text' name='telefono_modif'/>
+                <p>Edad del usuario: </p>
+                    <input type='text' class='text' name='edad_modif'/>
+                <p>Sexo del usuario:</p>
+                    <select name="sexo_modif">
+                        <option value="hombre">Hombre</option>
+                        <option value="mujer">Mujer</option>
+                    </select>
+                <p>Prueba realizada de forma correcta:</p>
+                    <input type='text' class='text' name='correcta_modif'/>
+                <p>Tiempo empleado en realizar la prueba:</p>
+                    <input type='text' class='text' name='tiempo_modif'/>
+                    <p>Pericia:</p>
+                    <select name="pericia_modif">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                <p>Valoración: </p>
+                    <select name="valoracion_modif">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                <p>Propuestas de mejora:</p>
+                    <input type='text' class='text' name='propuestas_modif'/>		
+                <p>Comentarios extras:</p>
+                    <input type='text' class='text' name='comentarios_modif'/>
+                <input type='submit' class='button' name='modificar' value='Modificar'/>
+            </div>
+            <div class="container">
+                <h2>Eliminar datos de una tabla</h2>
+                <p>Id del elemento a eliminar:</p>
+                <input type='text' class='text' name='id_elim'/> 
+                <input type='submit' class='button' name='eliminar' value='Eliminar'/>
+            </div>
+            <div class="container">
+                <h2>Generar informe</h2>
+                <input type='submit' class='button' name='generar' value='Generar'/>
+            </div>
+            <div class="container">
+                <h2>Cargar datos desde un archivo en una tabla de la Base de Datos</h2>
+                <input type='submit' class='button' name='cargar' value='Cargar'/>
+            </div>
+            <div class="container">
+                <h2>Exportar datos a un archivo los datos desde una tabla de la Base de Datos</h2>
+                <input type='submit' class='button' name='exportar' value='Exportar'/>
+            </div>
+		</form>
+
+        <ul><li>Edad media de los usuarios 33.7500 años</li><li>Frecuencia del %  de cada tipo de sexo entre los usuarios
+                        <ul>
+                        <li>Hombres: 50%</li>
+                        <li>Mujeres: 50%</li>
+                        </ul></li><li>Valor medio del nivel o pericia informática de los usuarios 7.0000</li><li>Tiempo medio para la tarea 236.25 s</li><li>Porcentaje de usuarios que han realizado la tarea correctamente 50%</li><li>Valor medio de la puntuación de los usuarios sobre la aplicación 7.2500</li></ul>    </body>
+</html>
